@@ -57,39 +57,38 @@
 						<div class="row d-flex no-gutters">
 							<div class="col-lg-8 col-md-7 order-md-last d-flex align-items-stretch">
 								<div class="contact-wrap w-100 p-md-5 p-4">
-									<h3 class="mb-4 heading">Get in touch</h3>
+									<h3 class="mb-4 heading">En Contacto</h3>
 									<form method="POST" id="contactForm" name="contactForm" class="contactForm">
-										<div class="row">
-											<div class="col-md-6">
-												<div class="form-group">
-													<label class="label" for="name">Full Name</label>
-													<input type="text" class="form-control" name="name" id="name" placeholder="Name">
-												</div>
-											</div>
-											<div class="col-md-6"> 
-												<div class="form-group">
-													<label class="label" for="email">Email Address</label>
-													<input type="email" class="form-control" name="email" id="email" placeholder="Email">
-												</div>
-											</div>
-											<div class="col-md-12">
-												<div class="form-group">
-													<label class="label" for="subject">Subject</label>
-													<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
-												</div>
-											</div>
-											<div class="col-md-12">
-												<div class="form-group">
-													<label class="label" for="#">Message</label>
-													<textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message"></textarea>
-												</div>
-											</div>
-											<div class="col-md-12">
-												<div class="form-group">
-													<button id="input_5" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">
-              Enviar
-            </button>
-													<div class="submitting"></div>
+										<div class="container">
+											<div class="row">
+												<div class="col-md-6 " id="form_container">
+													<h2></h2> 
+													<p> Escribe tu mensaje! </p>
+													<form role="form" method="post" id="reused_form">
+														<div class="row">
+															<div class="col-sm-12 form-group">
+																<label for="message"> Mensaje:</label>
+																<textarea class="form-control" type="textarea" id="message" name="message" maxlength="6000" rows="7"></textarea>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-sm-6 form-group">
+																<label for="name"> Nombre:</label>
+																<input type="text" class="form-control" id="name" name="name" required>
+															</div>
+															<div class="col-sm-6 form-group">
+																<label for="email"> Email:</label>
+																<input type="email" class="form-control" id="email" name="email" required>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-sm-12 form-group">
+																<button type="submit" class="btn btn-lg btn-default pull-right" >Send &rarr;</button>
+															</div>
+														</div>
+													</form>
+													<div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Posted your message successfully!</h3> </div>
+													<div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
 												</div>
 											</div>
 										</div>
@@ -135,13 +134,13 @@
 								</div>
 							</div>
 						</div>
-						<div class="row d-flex no-gutters">
+					    <div class="row d-flex no-gutters"></div>
 							<div class="google-map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1880.3658336571177!2d-99.19544052402145!3d19.510177074897605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d202a66146415f%3A0x6f8217fe4df4d697!2sManuel%20Rivera%20Anaya%20Croc%20I%2C%20El%20Rosario%2C%2002109%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1616622045683!5m2!1ses-419!2smx" width="1080" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
 						</div>
 					</div>
 				</section>
-			</div><!-- END COLORLIB-MAIN -->
-		</div><!-- END COLORLIB-PAGE -->
+			</div>
+		</div>
 
 		<!-- loader -->
 		<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>

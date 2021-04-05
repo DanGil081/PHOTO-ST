@@ -9363,3 +9363,12 @@ textarea.form-control {
       transform: scale(2.2);
     }
     
+   
+
+.logo {
+  left: 50%;
+  margin: 50px 0 50px -150px;
+  opacity: 0.8;
+  position: absolute;
+  width: 300px;
+}
